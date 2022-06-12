@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Komposti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>Kompostin etähallintapaneeli</h1>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Kompostin ilmaluukku</p>
+          <a href="/ilma0"><button class="button0" id="button0">0%</button></a><div class="space"></div>
+          <a href="/ilma25"><button class="button25" id="button25">25%</button></a><div class="space"></div>
+          <a href="/ilma50"><button class="button50" id="button50">50%</button></a><div class="space"></div>
+          <a href="/ilma100"><button class="button100" id="button100">100%</button></a>
+        </div>
+      </div>
+      <div class="space-grid"></div>
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Kompostin ilman lämpötila</p>
+          <canvas id="gauge-temperature-in"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Kompostin ilmankosteus</p>
+          <canvas id="gauge-humidity-in"></canvas>
+        </div>
+      </div>
+      <div class="space-grid"></div>
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Kompostimullan lämpötila</p>
+          <canvas id="gauge-temperature-soil"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Kompostimullan kosteus <span class="warning" id="warning"></span></p>
+          <canvas id="gauge-humidity-soil"></canvas>
+        </div>
+      </div>
+      <div class="space-grid"></div>
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Ulkolämpötila</p>
+          <canvas id="gauge-temperature-out"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Ulkoilman kosteus</p>
+          <canvas id="gauge-humidity-out"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

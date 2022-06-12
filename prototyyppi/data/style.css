@@ -1,0 +1,74 @@
+html {
+    font-family: Arial, Helvetica, sans-serif; 
+    display: inline-block; 
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.8rem; 
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+  p { 
+    font-size: 1.4rem;
+  }
+  button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button0 {
+    background-color: red;/*#4CAF50; /* Green */
+  }
+  .button25 {
+    background-color: red;/*#4CAF50; /* Green */
+  }
+  .button50 {
+    background-color: red;/*#4CAF50; /* Green */
+  }
+  .button100 {
+    background-color: red;/*#4CAF50; /* Green */
+  }
+  .topnav { 
+    overflow: hidden; 
+    background-color: #0A1128;
+  }
+  body {  
+    margin: 0;
+  }
+  .content { 
+    padding: 0.5%;
+  }
+  .card-grid { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: grid;
+    grid-gap: 2rem; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card { 
+    background-color: white; 
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+  }
+  .card-title { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #034078
+  }
+  .space {
+    width: 1px;
+    height: auto;
+    display: inline-block;
+  }
+  .space-grid {
+    height: 5px;
+  }
+  .warning {
+    display: none;
+    color: red;
+  }
